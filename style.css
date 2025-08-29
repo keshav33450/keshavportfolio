@@ -1,6 +1,4 @@
-/* ======================== */
-/* Global Styles & Variables */
-/* ======================== */
+
 :root {
     --primary-color: #1a1a1a;
     --secondary-color: #2c2c2c;
@@ -53,9 +51,10 @@ h1 { font-size: 3rem; }
 h2 { font-size: 2.5rem; color: var(--accent-color); }
 p { margin-bottom: 1rem; color: var(--text-secondary); }
 
-/* ======================== */
-/* Navigation Bar */
-/* ======================== */
+i{
+    font-size: 50px;
+}
+
 .navbar {
     position: sticky;
     top: 0;
@@ -116,9 +115,6 @@ p { margin-bottom: 1rem; color: var(--text-secondary); }
     box-shadow: 0 5px 15px rgba(247, 183, 51, 0.2);
 }
 
-/* ======================== */
-/* Hero Section (Home Page) */
-/* ======================== */
 .hero {
     height: 90vh;
     display: flex;
@@ -161,9 +157,7 @@ p { margin-bottom: 1rem; color: var(--text-secondary); }
     color: #1a1a1a;
 }
 
-/* ======================== */
-/* About Section */
-/* ======================== */
+
 .page-section {
     padding: 6rem 0;
 }
@@ -179,16 +173,13 @@ p { margin-bottom: 1rem; color: var(--text-secondary); }
     height: 250px;
     background-color: var(--secondary-color);
     border-radius: 50%;
-    /* Replace with your photo */
+
     background-image: url('images/profile.jpeg');
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
 }
 
-/* =========================== */
-/* Skills with Progress Bars   */
-/* =========================== */
 .skills-container {
     max-width: 800px;
     margin: 3rem auto 0 auto;
@@ -223,9 +214,7 @@ p { margin-bottom: 1rem; color: var(--text-secondary); }
     font-size: 0.9rem;
 }
 
-/* ======================== */
-/* Projects Page */
-/* ======================== */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -252,22 +241,20 @@ p { margin-bottom: 1rem; color: var(--text-secondary); }
     background-size: cover;
     background-position: center;
 }
-
-/* Unique classes for each project image */
 .project-image.portfolio-site {
-    background-image: url('images/portfolio.png'); /* Replace with your image path */
+    background-image: url('images/portfolio.png'); 
 }
 
 .project-image.quadrabot {
-    background-image: url('images/bot.jpeg'); /* Replace with your image path */
+    background-image: url('images/bot.jpeg'); 
 }
 
 .project-image.weather-app {
-    background-image: url('images/weather.png'); /* Replace with your image path */
+    background-image: url('images/weather.png');
 }
 
 .project-image.calculator {
-    background-image: url('images/calculator.png'); /* Replace with your image path */
+    background-image: url('images/calculator.png'); 
 }
 
 
@@ -296,9 +283,7 @@ p { margin-bottom: 1rem; color: var(--text-secondary); }
     margin-bottom: 0.5rem;
 }
 
-/* ======================== */
-/* Contact Page */
-/* ======================== */
+
 .contact-details {
     display: flex;
     justify-content: center;
@@ -335,9 +320,7 @@ p { margin-bottom: 1rem; color: var(--text-secondary); }
 }
 
 
-/* ======================== */
-/* Footer */
-/* ======================== */
+
 .footer {
     text-align: center;
     padding: 2rem 0;
