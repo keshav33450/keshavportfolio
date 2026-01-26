@@ -1,116 +1,149 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keshav Raja | Full-Stack Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image" href="images/img.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keshav Raja | Spider Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image" href="images/img.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.20/build/spline-viewer.js"></script>
 </head>
+
 <body>
 
-    <header class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">MyPortfolio</a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+  <!-- Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-card">
+      <div class="mask"></div>
+      <p>Loading Spider Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Effects -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="web-bg"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">MyPortfolio</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <!-- LEFT -->
+        <div>
+          <div class="badge fade-up">
+            <span class="dot"></span>
+            <span id="typedText"></span>
+          </div>
+
+          <h1 class="hero-title fade-up" data-text="Keshav Raja">
+            <span>Keshav Raja</span>
+          </h1>
+
+          <p class="hero-desc fade-up">
+            I build elegant, high-performance web applications from concept to launch.
+            Passionate about problem-solving and creating intuitive user experiences.
+          </p>
+
+          <div class="hero-buttons fade-up">
+            <a href="projects.html" class="btn">View My Work</a>
+            <a href="./images/resume.pdf" class="btn btn-secondary" target="_blank">Resume</a>
+            <a href="https://drive.google.com/drive/folders/1k58rSnRtnb5g7-01FhPzpyyCTRQ5A4oz?usp=drive_link"
+              class="btn" target="_blank">Certificates</a>
+          </div>
         </div>
-    </header>
 
-    <main>
-        <section class="hero">
-            <h1 class="hero-title">Keshav Raja</h1>
-            <p class="subtitle">Full-Stack Web Developer</p>
-            <p>I build elegant, high-performance web applications from concept to launch. Passionate about problem-solving and creating intuitive user experiences.</p>
-            <div class="hero-buttons">
-                <a href="projects.html" class="btn">View My Work</a>
-                <a href="./images/resume.pdf" class="btn btn-secondary" target="_blank">Resume</a>
-                <a href="https://drive.google.com/drive/folders/1k58rSnRtnb5g7-01FhPzpyyCTRQ5A4oz?usp=drive_link" class="btn">Certificates</a>
+        <!-- RIGHT -->
+        <div class="hero-card fade-up">
+          <div class="hero-card-inner">
+            <div class="profile">
+              <img src="images/img.jpg" alt="Keshav Raja">
+              <div>
+                <h3>Keshav Raja</h3>
+                <p>Full-Stack Developer</p>
+              </div>
             </div>
-        </section>
 
-        <section id="about" class="page-section">
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <div class="about-photo">
-                        </div>
-                    <div class="about-text">
-                        <p>Hello! I'm a passionate and driven Computer Science Engineer in st'joseph institute of technology student with a strong focus on full-stack web development. My journey in tech began with a curiosity for how things work, which has since evolved into a love for building complete, functional applications.</p>
-                        <p> I am actively seeking an entry-level developer role where I can contribute to impactful projects and continue to grow my skills in a collaborative environment.</p>
-                    </div>
-                </div>
+            <div class="model-box">
+              <spline-viewer url="https://prod.spline.design/YuHzHMr2UyrGZlOj/scene.splinecode "></spline-viewer>
             </div>
-        </section>
-
-        <section id="skills" class="page-section" style="background-color: #202020;">
-            <div class="container">
-                <h2 style="text-align: center;">Coding Skills</h2>
-                <div class="skills-container">
-                    
-                    <div class="skill">
-                        <p>Python</p>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%;">80%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <p>Java</p>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 80%;">80%</div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <p>HTML</p>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 90%;">90%</div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <p>CSS</p>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 95%;">95%</div>
-                        </div>
-                    </div>
-
-                    <div class="skill">
-                        <p>JavaScript</p>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 50%;">50%</div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                      <p>C</p>
-                      <div class="progress-bar">
-                        <div class="progress" style="width:70%;">70%</div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="skill">
-                        <p>C++</p>
-                        <div class="progress-bar">
-                          <div class="progress" style="width:60%;">60%</div>
-                      </div>
-                    </div>
-                
-
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Keshav Raja. All Rights Reserved.</p>
+          </div>
         </div>
-    </footer>
-<script src="script.js"></script>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="page-section">
+      <div class="container">
+        <h2 class="section-title fade-up">About Me</h2>
+
+        <div class="about-box fade-up">
+          <p>
+            Hello! I'm a passionate and driven Computer Science Engineer in st'joseph institute of technology student
+            with a strong focus on full-stack web development. My journey in tech began with a curiosity for how things work,
+            which has since evolved into a love for building complete, functional applications.
+          </p>
+          <p>
+            I am actively seeking an entry-level developer role where I can contribute to impactful projects
+            and continue to grow my skills in a collaborative environment.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="page-section" id="skills">
+      <div class="container">
+        <h2 class="section-title fade-up">Coding Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill fade-up"><p>Python</p><div class="progress-bar"><div class="progress" data-target="80">0%</div></div></div>
+          <div class="skill fade-up"><p>Java</p><div class="progress-bar"><div class="progress" data-target="80">0%</div></div></div>
+          <div class="skill fade-up"><p>HTML</p><div class="progress-bar"><div class="progress" data-target="90">0%</div></div></div>
+          <div class="skill fade-up"><p>CSS</p><div class="progress-bar"><div class="progress" data-target="95">0%</div></div></div>
+          <div class="skill fade-up"><p>JavaScript</p><div class="progress-bar"><div class="progress" data-target="50">0%</div></div></div>
+          <div class="skill fade-up"><p>C</p><div class="progress-bar"><div class="progress" data-target="70">0%</div></div></div>
+          <div class="skill fade-up"><p>C++</p><div class="progress-bar"><div class="progress" data-target="60">0%</div></div></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Keshav Raja. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

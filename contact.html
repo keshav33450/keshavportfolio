@@ -1,50 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts | Keshav Raja</title>
-    <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image" href="images/img.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Keshav Raja</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image" href="images/img.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="web-bg"></div>
+  <div class="particles" id="particles"></div>
 
-    <header class="navbar">
-        <div class="container">
-            <a href="index.html" class="logo">MyPortfolio</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">MyPortfolio</a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-section">
+      <div class="container">
+        <h2 class="section-title fade-up">Contact Me</h2>
+        <p class="section-subtitle fade-up">
+          I'm always open to connecting. You can reach me through any of the following platforms.
+        </p>
+
+        <div class="contact-grid">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kkeshavraja@gmail.com" target="_blank" class="contact-card fade-up">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email</h3>
+            <p>kkeshavraja@gmail.com</p>
+          </a>
+
+          <a href="https://linkedin.com/in/keshavraja" target="_blank" class="contact-card fade-up">
+            <i class="fa-brands fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/keshavraja</p>
+          </a>
+
+          <a href="https://github.com/keshav33450" target="_blank" class="contact-card fade-up">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+            <p>github.com/keshav33450</p>
+          </a>
         </div>
-    </header>
+      </div>
+    </section>
+  </main>
 
-    <main>
-        <section id="contact" class="page-section">
-            <div class="container">
-                <h2 style="text-align: center;">Contact Me</h2>
-                <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">
-                    I'm always open to connecting. You can reach me through any of the following platforms.
-                </p>
-                
-                <div class="contact-details">
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kkeshavraja@gmail.com" target="_blank" class="contact-item"><i class="fa-solid fa-envelope"></i></a>
-                     <a href="https://linkedin.com/in/keshavraja" target="_blank" class="contact-item"><i class="fa-brands fa-linkedin"></i></a>
-                      <a href="https://github.com/keshav33450" target="_blank" class="contact-item"><i class="fa-brands fa-github"></i></a>
-                 
-                </div>
-            </div>
-        </section>
-    </main>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Keshav Raja. All Rights Reserved.</p>
+    </div>
+  </footer>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Keshav Raja. All Rights Reserved.</p>
-        </div>
-    </footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
