@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keshav Raja — Software Developer Portfolio</title>
+  <meta name="description" content="Keshav Raja is a software developer based in Chennai, crafting scalable applications and robust backend systems. React, Node.js, PostgreSQL, and more.">
+  <meta name="author" content="Keshav Raja">
+  <meta property="og:title" content="Keshav Raja — Software Developer">
+  <meta property="og:description" content="Full-stack developer crafting clean interfaces, solid code, and the details that quietly do the work.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ PAGE TRANSITION ============ -->
+  <div id="page-intro" class="page-intro">
+    <div class="page-intro__name">Keshav Raja</div>
+  </div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div id="cursor-ring" class="cursor-ring"></div>
+  <div id="cursor-dot" class="cursor-dot"></div>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav">
+    <a href="#top" class="nav__brand">Keshav</a>
+    <button id="nav-hamburger" class="nav__hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div id="nav-links" class="nav__links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="Keshav-Raja-Resume.pdf" target="_blank" rel="noopener" class="nav__resume">Resume</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="top" class="hero">
+    <div class="hero__cloud1"></div>
+    <div class="hero__cloud2"></div>
+
+    <div class="hero__character" data-reveal>
+      <img src="keshav-cut.png" alt="Keshav Raja">
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__greeting" data-reveal>
+        <span>👋</span><span>Hey, I'm <strong style="font-weight:800;">Keshav Raja</strong></span>
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__title-line1" data-reveal><span>software</span></span>
+        <span class="hero__title-line2" data-reveal><span>developer</span></span>
+      </h1>
+
+      <p class="hero__sub" data-reveal>
+        Crafting scalable applications &amp; robust backend systems — clean interfaces, solid code, and the details that quietly do the work.
+      </p>
+
+      <div class="hero__cta" data-reveal>
+        <a href="Keshav-Raja-Resume.pdf" target="_blank" rel="noopener" class="hero__cta-primary">View Resume <span style="font-size:19px;">→</span></a>
+        <a href="#contact" class="hero__cta-secondary">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero__bottom">
+      <div>
+        <span class="hero__location-label">BASED IN</span>
+        <span class="hero__location">📍 CHENNAI, TN</span>
+      </div>
+      <div class="hero__tagline">
+        <span>CREATE</span><span class="hero__tagline-sep">—</span>
+        <span>CODE</span><span class="hero__tagline-sep">—</span>
+        <span>SHIP</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ WHAT I DO ============ -->
+  <section id="about" class="section-about">
+    <div class="section-about__inner">
+      <div class="section-label" data-reveal>
+        <span class="section-label__icon">✦</span>
+        <span class="section-label__text">WHAT I DO</span>
+      </div>
+
+      <p class="about__headline" data-reveal>
+        I turn messy, real‑world problems into products people actually
+        <span class="accent-word">use</span>
+        — interfaces that feel obvious, code that scales, and
+        <span class="faded">details that quietly do the work.</span>
+      </p>
+
+      <div class="about__stats">
+        <div class="stat" data-reveal>
+          <div class="stat__number" data-count="3">0</div>
+          <div class="stat__title">Internships</div>
+          <div class="stat__desc">software engineering, full-stack &amp; UI/UX roles</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__number" data-count="8" data-suffix="+">0</div>
+          <div class="stat__title">Projects shipped</div>
+          <div class="stat__desc">POS systems, web platforms &amp; UI concepts</div>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__number" data-count="10" data-suffix="+">0</div>
+          <div class="stat__title">Certifications</div>
+          <div class="stat__desc">Meta, Google &amp; Infosys Springboard</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SELECTED WORK ============ -->
+  <section id="work" class="section-work">
+    <div class="section-work__inner">
+      <div class="work__header" data-reveal>
+        <div>
+          <div class="section-label" style="margin-bottom:14px;">
+            <span class="section-label__icon">✦</span>
+            <span class="section-label__text">SELECTED WORK</span>
+          </div>
+          <h2>Things I've built</h2>
+        </div>
+        <span class="work__header-sub">A mix of full-stack products and interface design.</span>
+      </div>
+
+      <div class="work__grid">
+        <!-- Card 1 -->
+        <article class="work-card" data-reveal>
+          <video src="pos.mp4" autoplay muted loop playsinline disablepictureinpicture></video>
+          <div class="work-card__body">
+            <div class="work-card__top">
+              <h3 class="work-card__title">ZyVoxa Smart POS</h3>
+              <span class="work-card__tag">Full-stack</span>
+            </div>
+            <p class="work-card__desc">A complete point-of-sale platform with GST billing, inventory, sales analytics, barcode checkout and role-based access control.</p>
+            <div class="work-card__techs">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">PostgreSQL</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="work-card" data-reveal>
+          <video src="legalmeet.mp4" autoplay muted loop playsinline disablepictureinpicture></video>
+          <div class="work-card__body">
+            <div class="work-card__top">
+              <h3 class="work-card__title">LegalMeet</h3>
+              <span class="work-card__tag">Product + UI</span>
+            </div>
+            <p class="work-card__desc">A legal-assistance platform with lawyer discovery, consultation booking and a clean, trustworthy interface.</p>
+            <div class="work-card__techs">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Responsive</span>
+              <span class="tech-pill">UX design</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="work-card" data-reveal>
+          <video src="devbeez.mp4" autoplay muted loop playsinline disablepictureinpicture></video>
+          <div class="work-card__body">
+            <div class="work-card__top">
+              <h3 class="work-card__title">DevBeez</h3>
+              <span class="work-card__tag">Web platform</span>
+            </div>
+            <p class="work-card__desc">A developer-community platform with an intuitive UI, community features and seamless navigation.</p>
+            <div class="work-card__techs">
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Responsive</span>
+              <span class="tech-pill">UI</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="work-card" data-reveal>
+          <video src="quiz.mp4" autoplay muted loop playsinline disablepictureinpicture></video>
+          <div class="work-card__body">
+            <div class="work-card__top">
+              <h3 class="work-card__title">SJIT Quiz</h3>
+              <span class="work-card__tag">Web app</span>
+            </div>
+            <p class="work-card__desc">An interactive quiz application with dynamic question handling and live score evaluation, built from scratch.</p>
+            <div class="work-card__techs">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">JavaScript</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="section-exp">
+    <div class="section-exp__glow"></div>
+    <div class="section-exp__inner">
+      <div data-reveal>
+        <div class="section-label">
+          <span class="section-label__icon">✦</span>
+          <span class="section-label__text">EXPERIENCE</span>
+        </div>
+        <h2 class="exp__title">The road so far</h2>
+        <p class="exp__intro">
+          A full-stack developer &amp; UI/UX designer studying Computer Science at St. Joseph Institute of Technology, Chennai — building end to end, from database to interface, and shipping fast with AI-assisted tooling.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__line"></div>
+
+        <div class="timeline__label" data-reveal>INTERNSHIPS</div>
+
+        <!-- Internship 1 -->
+        <div class="timeline__item" data-reveal>
+          <span class="timeline__dot"></span>
+          <div class="timeline__card">
+            <span class="timeline__year">2026</span>
+            <div class="timeline__role">Software Engineering Intern</div>
+            <div class="timeline__company">Zyvoxa</div>
+            <p class="timeline__desc">Contributed to cloud infrastructure, systems programming and OS feature development. Offered adaptive coding support across JavaScript, Swift, Python &amp; SQL.</p>
+          </div>
+        </div>
+
+        <!-- Internship 2 -->
+        <div class="timeline__item" data-reveal>
+          <span class="timeline__dot"></span>
+          <div class="timeline__card">
+            <span class="timeline__year">2025</span>
+            <div class="timeline__role">Full-Stack Intern</div>
+            <div class="timeline__company">ZUNTRA Digital</div>
+            <p class="timeline__desc">Built scalable, user-friendly interfaces and frontend components — improving UI responsiveness and overall application usability across the product.</p>
+          </div>
+        </div>
+
+        <!-- Internship 3 -->
+        <div class="timeline__item" data-reveal>
+          <span class="timeline__dot"></span>
+          <div class="timeline__card">
+            <span class="timeline__year">2025</span>
+            <div class="timeline__role">UI/UX Design Intern</div>
+            <div class="timeline__company">Retech Solutions Pvt. Ltd.</div>
+            <p class="timeline__desc">Designed a Swiggy delivery-app UI/UX concept in Figma. Presented work to clients and iterated on constructive feedback to hit project goals.</p>
+          </div>
+        </div>
+
+        <div class="timeline__label timeline__label--edu" data-reveal>EDUCATION</div>
+
+        <!-- Education -->
+        <div class="timeline__item" data-reveal>
+          <span class="timeline__dot timeline__dot--edu"></span>
+          <div class="timeline__card">
+            <span class="timeline__year timeline__year--edu">2022 — 2026</span>
+            <div class="timeline__role" style="padding-right:120px;">B.E. Computer Science &amp; Engineering</div>
+            <div class="timeline__company">St. Joseph Institute of Technology, Chennai</div>
+            <p class="timeline__desc">Active IEEE member contributing to technical projects. Shortlisted for the government EDII Hackathon.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills & Certs -->
+      <div class="skills-certs">
+        <div data-reveal>
+          <div class="skills-label">SKILLS &amp; TOOLS</div>
+          <div class="skills-list">
+            <span class="skill-pill">React.js</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">Git &amp; GitHub</span>
+            <span class="skill-pill">UI/UX design</span>
+          </div>
+        </div>
+        <div data-reveal>
+          <div class="skills-label">CERTIFICATIONS</div>
+          <div class="certs-list">
+            <div class="cert-item"><span class="cert-item__dot">◆</span> Meta Front-End Developer — Professional Certificate</div>
+            <div class="cert-item"><span class="cert-item__dot">◆</span> Google — Git &amp; GitHub</div>
+            <div class="cert-item"><span class="cert-item__dot">◆</span> Infosys Springboard — MERN Stack</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / FOOTER ============ -->
+  <footer id="contact" class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <h2 class="footer__heading" data-reveal>
+          let's <span class="script">create</span><br>
+          something great.
+        </h2>
+
+        <div class="footer__video-wrap" data-reveal>
+          <div class="footer__speech">
+            <span>Hi there!</span><span style="font-size:22px;">👋</span>
+            <span class="footer__speech-tail"></span>
+          </div>
+          <div class="footer__video-frame">
+            <video src="hi.mp4" autoplay muted loop playsinline disablepictureinpicture></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__contacts" data-reveal>
+        <div>
+          <div class="footer__contact-label">EMAIL</div>
+          <a href="mailto:kkeshavraja@gmail.com" class="footer__contact-value">kkeshavraja@gmail.com</a>
+        </div>
+        <div>
+          <div class="footer__contact-label">PHONE</div>
+          <a href="tel:+919942610222" class="footer__contact-value">+91 99426 10222</a>
+        </div>
+        <div>
+          <div class="footer__contact-label" style="margin-bottom:10px;">SOCIAL</div>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/in/keshavraja/" target="_blank" rel="noopener" aria-label="LinkedIn" class="footer__social-link">in</a>
+            <a href="https://github.com/keshav33450" target="_blank" rel="noopener" aria-label="GitHub" class="footer__social-link footer__social-link--sm">GH</a>
+            <a href="https://www.credly.com/users/keshav-raja" target="_blank" rel="noopener" aria-label="Credly" class="footer__social-link footer__social-link--sm">Cr</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bar">
+        <span>© 2026 Keshav Raja</span>
+        <span>Chennai, India · Available for work</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
